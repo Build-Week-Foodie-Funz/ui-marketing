@@ -1,0 +1,460 @@
+@font-face {
+  font-family: "Zrnic";
+  src: url("/fonts/zrnic.ttf");
+}
+@font-face {
+  font-family: "Chinese Rocks";
+  src: url("/fonts/chinese\ rocks\ rg.ttf");
+}
+@font-face {
+  font-family: "VDS Thin";
+  src: url("/fonts//vds-thin.ttf");
+}
+.zrnic {
+  font-family: "Zrnic";
+}
+.rocks {
+  font-family: "Chinese Rocks";
+}
+.vds {
+  font-family: "VDS Thin";
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Chinese Rocks";
+}
+h2 {
+  font-size: 3.2rem;
+  color: #b55e1c;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+  font-family: "VDS Thin";
+  color: #db832d;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  height: 80%;
+  width: auto;
+  height: 5em;
+}
+.iconTitle {
+  width: 60%;
+  display: flex;
+  padding-left: 6%;
+  font-family: "Zrnic";
+}
+header {
+  width: 100%;
+  background: #db832d;
+  display: flex;
+  align-items: center;
+}
+@media (max-width:500px) {
+  header {
+    flex-direction: column;
+  }
+}
+header h2 {
+  width: 50%;
+  padding: 2% 2% 2% 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 3.6rem;
+}
+@media (max-width:767px) {
+  header h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:500px) {
+  header h2 {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header .navLinks {
+  width: 100%;
+  padding: 1% 4%;
+  padding-left: 50%;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+@media (max-width:500px) {
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  width: 200px;
+  height: 35px;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+.footer {
+  width: 100%;
+  background-color: #b55e1c;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .logoFooter {
+  height: 80%;
+  width: auto;
+  height: 5em;
+}
+.footer .iconFooter {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-left: 6%;
+  font-family: "Zrnic";
+}
+.footer .iconFooter .footerLogoPhrase {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .iconFooter .footerLogoPhrase h2 {
+  width: 50%;
+  padding: 2% 2% 2% 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 3.6rem;
+}
+.footer .iconFooter .dreams {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20%;
+}
+.footer .iconFooter .dreams h3 {
+  color: white;
+  font-size: 1.8rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.footer .navLinksFooter {
+  width: 30%;
+}
+.footer .navLinksFooter nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .navLinksFooter nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  padding: 1% 5%;
+}
+.container {
+  background-color: #fbfcee;
+}
+.intro {
+  width: 100%;
+  display: flex;
+}
+.join {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.join h2 {
+  width: 100%;
+  text-align: center;
+  color: #b55e1c;
+  font-size: 9rem;
+  padding-bottom: 4%;
+  font-family: "Zrnic";
+}
+.join h3 {
+  color: #db832d;
+  font-size: 3.2rem;
+  margin-bottom: 2%;
+  font-family: "VDS Thin";
+}
+.join .joinNow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  width: 350px;
+  height: 70px;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  border-radius: 3rem;
+  font-family: "Chinese Rocks";
+}
+.imageIntro {
+  width: 70%;
+}
+.about {
+  width: 100%;
+  display: flex;
+  padding-top: 6%;
+}
+.imageAbout {
+  width: 60%;
+  margin: 0 5%;
+}
+.imageAbout .aboutPic {
+  width: 90%;
+}
+.wordsAbout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40%;
+}
+.wordsAbout h2 {
+  width: 100%;
+  color: #b55e1c;
+  padding-top: 20%;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wordsAbout p {
+  width: 100%;
+  color: #db832d;
+  padding: 5% 15% 0 15%;
+  font-size: 2.4rem;
+}
+.infoColumns {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5% 2.5% 5% 2.5%;
+}
+.infoColumns .column {
+  width: 18%;
+  text-align: center;
+}
+.infoColumns .column .dessert {
+  padding: 0 5%;
+  padding-bottom: 1%;
+}
+.infoColumns .column .cake {
+  padding-bottom: 6%;
+}
+.infoColumns .column .icecream {
+  padding-bottom: 4%;
+}
+.infoColumns .column .lollipop {
+  padding-bottom: 1%;
+}
+.infoColumns .column h2 {
+  padding: 6% 0;
+}
+.infoColumns .column p {
+  padding: 0 2%;
+}
+.convinced {
+  width: 100%;
+  padding: 2% 0 6% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.convinced h1 {
+  font-size: 7rem;
+  color: #008b91;
+  padding: 2% 0 2% 0;
+}
+.convinced .joinNow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  width: 300px;
+  height: 60px;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  border-radius: 3rem;
+  font-family: "Chinese Rocks";
+}

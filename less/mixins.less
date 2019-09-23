@@ -1,0 +1,23 @@
+// Mixins in here
+
+.custom-layout(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.headerPadding(@top,@bottom) {
+  padding-top: @top;
+  padding-bottom: @bottom;
+}
+.buttonlayout(@color,@height,@width,@wordColor,@size) {
+  .custom-layout(center, center);
+  background-color: @color;
+  width: @width;
+  height: @height;
+  color: @wordColor;
+  font-size: @size;
+  border-radius: 5px;
+}
+@headerFontSize: 2.4rem;
+@foodieFun: 3.6rem;
