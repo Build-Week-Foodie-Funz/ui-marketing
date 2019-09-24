@@ -363,7 +363,6 @@ header nav a {
   width: 60%;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 @media (max-width:500px) {
   .footer .navLinksFooter {
@@ -371,9 +370,9 @@ header nav a {
   }
 }
 .footer .navLinksFooter nav {
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 @media (max-width:500px) {
   .footer .navLinksFooter nav {
@@ -383,7 +382,6 @@ header nav a {
   }
 }
 .footer .navLinksFooter nav a {
-  width: 15%;
   font-size: 1.8rem;
   text-decoration: none;
   color: white;
@@ -398,8 +396,9 @@ header nav a {
 }
 @media (max-width:500px) {
   .footer .navLinksFooter nav a {
-    padding: 1% 0;
-    margin: 0 2%;
+    padding: 0% 3%;
+    margin: 0;
+    font-size: 1rem;
   }
 }
 .container {
