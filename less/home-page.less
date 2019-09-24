@@ -5,14 +5,28 @@
 .intro {
   width: 100%;
   display: flex;
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .join {
-  width: 30%;
-  //border: 1px solid black;
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 10%;
+
+  @media @tablet {
+    width: 100%;
+    padding: 1% 0;
+    .tablet {
+      display: inline-block;
+    }
+  }
 
   h2 {
     width: 100%;
@@ -20,27 +34,105 @@
     //border: 1px solid black;
 
     color: @darkOrange;
-    font-size: 9rem;
+    font-size: 5rem;
     padding-bottom: 4%;
     font-family: "Zrnic";
   }
 
   h3 {
     color: @lightOrange;
-    font-size: 3.2rem;
+    font-size: 2rem;
     margin-bottom: 2%;
 
     font-family: "VDS Thin";
+
+    @media @tablet {
+      display: none;
+    }
   }
 
-  .joinNow {
-    .buttonlayout(teal, 70px, 350px, white, 2rem);
+  .joinNowIntro {
+    .buttonlayout(teal, 26%, 50%, white, 2rem);
     border-radius: 3rem;
     font-family: "Chinese Rocks";
+
+    @media @tablet {
+      .buttonlayout(teal, 30%, 30%, white, 1.8rem);
+      border-radius: 3rem;
+      font-family: "Chinese Rocks";
+      padding: 1% 0;
+    }
   }
 }
+
+.introWords {
+  width: 40%;
+
+  .tablet {
+    display: none;
+  }
+
+  @media @tablet {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .signIn {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    padding-bottom: 8%;
+
+    @media @tablet {
+      padding: 1% 0 3% 0;
+      height: 60%;
+    }
+
+    h2 {
+      color: @darkOrange;
+      font-size: 2rem;
+      padding-bottom: 5%;
+
+      font-family: "VDS Thin";
+
+      @media @tablet {
+        padding-bottom: 3%;
+        font-size: 3rem;
+        display: none;
+      }
+    }
+    .signInButton {
+      .buttonlayout(teal, 30%, 50%, white, 1.8rem);
+      border-radius: 3rem;
+      font-family: "Chinese Rocks";
+
+      @media @tablet {
+        .buttonlayout(teal, 30%, 30%, white, 1.8rem);
+        border-radius: 3rem;
+        font-family: "Chinese Rocks";
+        padding: 1% 0;
+      }
+    }
+  }
+}
+
+.joinNow {
+  .buttonlayout(teal, 70px, 350px, white, 2rem);
+  border-radius: 3rem;
+  font-family: "Chinese Rocks";
+}
+
 .imageIntro {
   width: 70%;
+
+  @media @tablet {
+    width: 100%;
+  }
 }
 
 .about {
@@ -48,27 +140,44 @@
   display: flex;
 
   padding-top: 6%;
+
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .imageAbout {
   width: 60%;
-  margin: 0 5%;
+  // margin: 0 5%;
+
+  @media @tablet {
+    width: 100%;
+  }
 
   .aboutPic {
     width: 90%;
+    @media @tablet {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
 .wordsAbout {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 40%;
+  width: 50%;
+
+  @media @tablet {
+    width: 100%;
+  }
 
   h2 {
     width: 100%;
     color: @darkOrange;
 
-    padding-top: 20%;
+    padding-top: 5%;
     font-size: 4rem;
     display: flex;
     align-items: center;
@@ -78,8 +187,8 @@
     width: 100%;
     color: @lightOrange;
 
-    padding: 5% 15% 0 15%;
-    font-size: 2.4rem;
+    padding: 5% 5% 1% 5%;
+    font-size: 2rem;
   }
 }
 
@@ -91,14 +200,26 @@
 
   padding: 5% 2.5% 5% 2.5%;
 
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
   .column {
     width: 18%;
 
     text-align: center;
 
+    @media @tablet {
+      width: 100%;
+    }
+
     .dessert {
       padding: 0 5%;
       padding-bottom: 1%;
+      @media @tablet {
+        padding: 0 30%;
+      }
     }
     .cake {
       padding-bottom: 6%;
@@ -111,16 +232,28 @@
     }
     h2 {
       padding: 6% 0;
+
+      @media @tablet {
+        width: 100%;
+        padding: 2% 0;
+      }
     }
     p {
       padding: 0 2%;
+
+      @media @tablet {
+        width: 100%;
+        font-size: 2rem;
+        padding-bottom: 6%;
+      }
     }
   }
 }
 
 .convinced {
   width: 100%;
-  padding: 2% 0 6% 0;
+  //height: 80%;
+  padding: 0% 0 6% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,12 +262,140 @@
   h1 {
     font-size: 7rem;
     color: @teal;
-    padding: 2% 0 2% 0;
+    padding: 2% 0 4% 0;
+  }
+}
+.joinNow {
+  .buttonlayout(teal, 10%, 20%, white, 1.6rem);
+  border-radius: 3rem;
+  font-family: "Chinese Rocks";
+  padding: 1% 0;
+}
+
+/************************************* TEAM PAGE *********************************/
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.4rem;
+  color: @darkOrange;
+  padding: 6% 0;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.middleRow {
+  display: flex;
+  justify-content: space-between;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4%;
+
+  @media @small {
+    font-size: 2rem;
   }
 
-  .joinNow {
-    .buttonlayout(teal, 60px, 300px, white, 2rem);
-    border-radius: 3rem;
-    font-family: "Chinese Rocks";
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0%;
+  }
+}
+
+.first {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2%;
+    border: 5px solid @darkOrange;
+  }
+  .picture {
+    padding: 15%;
+
+    @media @mobile {
+      padding: 15% 15% 5% 15%;
+    }
+    .profile {
+      border: 5px solid @teal;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .nameJob {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media @mobile {
+      padding-top: 1%;
+    }
+
+    h2 {
+      padding-top: 4%;
+      font-size: 3.6rem;
+
+      @media @small {
+        font-size: 3rem;
+      }
+    }
+    h3 {
+      font-size: 2.8rem;
+      padding-bottom: 4%;
+
+      @media @small {
+        font-size: 2rem;
+      }
+    }
+  }
+  .socialLogos {
+    width: 100%;
+    display: flex;
+    padding: 1% 35%;
+
+    .github {
+      width: 50%;
+      padding-right: 15%;
+    }
+    .twitter {
+      width: 50%;
+      padding-left: 15%;
+    }
   }
 }

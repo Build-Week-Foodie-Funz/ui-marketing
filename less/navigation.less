@@ -11,6 +11,10 @@
 
   padding-left: 6%;
   font-family: "Zrnic";
+
+  @media tablet {
+    font-size: 1.4rem;
+  }
 }
 
 header {
@@ -34,6 +38,7 @@ header {
 
     @media @tablet {
       .custom-layout(center, center);
+      font-size: 2.4rem;
     }
 
     @media @mobile {
@@ -43,10 +48,14 @@ header {
     }
   }
   .navLinks {
-    width: 100%;
-
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
     padding: 1% 4%;
-    padding-left: 50%;
+
+    @media @mobile {
+      width: 100%;
+    }
   }
   nav {
     width: 100%;

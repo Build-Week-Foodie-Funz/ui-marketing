@@ -192,6 +192,11 @@ img {
   padding-left: 6%;
   font-family: "Zrnic";
 }
+@media tablet {
+  .iconTitle {
+    font-size: 1.4rem;
+  }
+}
 header {
   width: 100%;
   background: #db832d;
@@ -218,6 +223,7 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.4rem;
   }
 }
 @media (max-width:500px) {
@@ -230,9 +236,15 @@ header h2 {
   }
 }
 header .navLinks {
-  width: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
   padding: 1% 4%;
-  padding-left: 50%;
+}
+@media (max-width:500px) {
+  header .navLinks {
+    width: 100%;
+  }
 }
 header nav {
   width: 100%;
@@ -265,6 +277,11 @@ header nav a {
   font-size: 1.8rem;
   border-radius: 5px;
 }
+.btn:hover {
+  background-color: white;
+  color: teal;
+  border: 1px solid teal;
+}
 .footer {
   width: 100%;
   background-color: #b55e1c;
@@ -285,9 +302,20 @@ header nav a {
   padding-left: 6%;
   font-family: "Zrnic";
 }
+@media (max-width:500px) {
+  .footer .iconFooter {
+    padding-left: 0%;
+  }
+}
 .footer .iconFooter .footerLogoPhrase {
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width:767px) {
+  .footer .iconFooter .footerLogoPhrase {
+    width: 100%;
+    padding-left: 0%;
+  }
 }
 .footer .iconFooter .footerLogoPhrase h2 {
   width: 50%;
@@ -299,6 +327,11 @@ header nav a {
   color: white;
   font-size: 3.6rem;
 }
+@media (max-width:767px) {
+  .footer .iconFooter .footerLogoPhrase h2 {
+    font-size: 2rem;
+  }
+}
 .footer .iconFooter .dreams {
   width: 100%;
   display: flex;
@@ -306,24 +339,65 @@ header nav a {
   align-items: center;
   padding-right: 20%;
 }
+@media (max-width:767px) {
+  .footer .iconFooter .dreams {
+    dispaly: flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-right: 3%;
+  }
+}
 .footer .iconFooter .dreams h3 {
   color: white;
   font-size: 1.8rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
+@media (max-width:767px) {
+  .footer .iconFooter .dreams h3 {
+    font-size: 1.6rem;
+  }
+}
 .footer .navLinksFooter {
-  width: 30%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .footer .navLinksFooter {
+    width: 60%;
+  }
 }
 .footer .navLinksFooter nav {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width:500px) {
+  .footer .navLinksFooter nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 .footer .navLinksFooter nav a {
+  width: 25%;
   font-size: 1.8rem;
   text-decoration: none;
   color: white;
-  padding: 1% 5%;
+  padding: 1% 2%;
+  text-align: center;
+}
+@media (max-width:767px) {
+  .footer .navLinksFooter nav a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:500px) {
+  .footer .navLinksFooter nav a {
+    padding: 1% 0;
+    margin: 0 2%;
+  }
 }
 .container {
   background-color: #fbfcee;
@@ -332,28 +406,169 @@ header nav a {
   width: 100%;
   display: flex;
 }
+@media (max-width:767px) {
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .join {
-  width: 30%;
+  width: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 10%;
+}
+@media (max-width:767px) {
+  .join {
+    width: 100%;
+    padding: 1% 0;
+  }
+  .join .tablet {
+    display: inline-block;
+  }
 }
 .join h2 {
   width: 100%;
   text-align: center;
   color: #b55e1c;
-  font-size: 9rem;
+  font-size: 5rem;
   padding-bottom: 4%;
   font-family: "Zrnic";
 }
 .join h3 {
   color: #db832d;
-  font-size: 3.2rem;
+  font-size: 2rem;
   margin-bottom: 2%;
   font-family: "VDS Thin";
 }
-.join .joinNow {
+@media (max-width:767px) {
+  .join h3 {
+    display: none;
+  }
+}
+.join .joinNowIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  width: 50%;
+  height: 26%;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5px;
+  border-radius: 3rem;
+  font-family: "Chinese Rocks";
+}
+.join .joinNowIntro:hover {
+  background-color: white;
+  color: teal;
+  border: 1px solid teal;
+}
+@media (max-width:767px) {
+  .join .joinNowIntro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    width: 30%;
+    height: 30%;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border-radius: 3rem;
+    font-family: "Chinese Rocks";
+    padding: 1% 0;
+  }
+  .join .joinNowIntro:hover {
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+  }
+}
+.introWords {
+  width: 40%;
+}
+.introWords .tablet {
+  display: none;
+}
+@media (max-width:767px) {
+  .introWords {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.introWords .signIn {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 8%;
+}
+@media (max-width:767px) {
+  .introWords .signIn {
+    padding: 1% 0 3% 0;
+    height: 60%;
+  }
+}
+.introWords .signIn h2 {
+  color: #b55e1c;
+  font-size: 2rem;
+  padding-bottom: 5%;
+  font-family: "VDS Thin";
+}
+@media (max-width:767px) {
+  .introWords .signIn h2 {
+    padding-bottom: 3%;
+    font-size: 3rem;
+    display: none;
+  }
+}
+.introWords .signIn .signInButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  width: 50%;
+  height: 30%;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  border-radius: 3rem;
+  font-family: "Chinese Rocks";
+}
+.introWords .signIn .signInButton:hover {
+  background-color: white;
+  color: teal;
+  border: 1px solid teal;
+}
+@media (max-width:767px) {
+  .introWords .signIn .signInButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    width: 30%;
+    height: 30%;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border-radius: 3rem;
+    font-family: "Chinese Rocks";
+    padding: 1% 0;
+  }
+  .introWords .signIn .signInButton:hover {
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+  }
+}
+.joinNow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,31 +581,62 @@ header nav a {
   border-radius: 3rem;
   font-family: "Chinese Rocks";
 }
+.joinNow:hover {
+  background-color: white;
+  color: teal;
+  border: 1px solid teal;
+}
 .imageIntro {
   width: 70%;
+}
+@media (max-width:767px) {
+  .imageIntro {
+    width: 100%;
+  }
 }
 .about {
   width: 100%;
   display: flex;
   padding-top: 6%;
 }
+@media (max-width:767px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .imageAbout {
   width: 60%;
-  margin: 0 5%;
+}
+@media (max-width:767px) {
+  .imageAbout {
+    width: 100%;
+  }
 }
 .imageAbout .aboutPic {
   width: 90%;
+}
+@media (max-width:767px) {
+  .imageAbout .aboutPic {
+    width: 100%;
+    margin: 0;
+  }
 }
 .wordsAbout {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 40%;
+  width: 50%;
+}
+@media (max-width:767px) {
+  .wordsAbout {
+    width: 100%;
+  }
 }
 .wordsAbout h2 {
   width: 100%;
   color: #b55e1c;
-  padding-top: 20%;
+  padding-top: 5%;
   font-size: 4rem;
   display: flex;
   align-items: center;
@@ -399,8 +645,8 @@ header nav a {
 .wordsAbout p {
   width: 100%;
   color: #db832d;
-  padding: 5% 15% 0 15%;
-  font-size: 2.4rem;
+  padding: 5% 5% 1% 5%;
+  font-size: 2rem;
 }
 .infoColumns {
   width: 100%;
@@ -409,13 +655,29 @@ header nav a {
   justify-content: space-evenly;
   padding: 5% 2.5% 5% 2.5%;
 }
+@media (max-width:767px) {
+  .infoColumns {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .infoColumns .column {
   width: 18%;
   text-align: center;
 }
+@media (max-width:767px) {
+  .infoColumns .column {
+    width: 100%;
+  }
+}
 .infoColumns .column .dessert {
   padding: 0 5%;
   padding-bottom: 1%;
+}
+@media (max-width:767px) {
+  .infoColumns .column .dessert {
+    padding: 0 30%;
+  }
 }
 .infoColumns .column .cake {
   padding-bottom: 6%;
@@ -429,12 +691,25 @@ header nav a {
 .infoColumns .column h2 {
   padding: 6% 0;
 }
+@media (max-width:767px) {
+  .infoColumns .column h2 {
+    width: 100%;
+    padding: 2% 0;
+  }
+}
 .infoColumns .column p {
   padding: 0 2%;
 }
+@media (max-width:767px) {
+  .infoColumns .column p {
+    width: 100%;
+    font-size: 2rem;
+    padding-bottom: 6%;
+  }
+}
 .convinced {
   width: 100%;
-  padding: 2% 0 6% 0;
+  padding: 0% 0 6% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -443,18 +718,153 @@ header nav a {
 .convinced h1 {
   font-size: 7rem;
   color: #008b91;
-  padding: 2% 0 2% 0;
+  padding: 2% 0 4% 0;
 }
-.convinced .joinNow {
+.joinNow {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: teal;
-  width: 300px;
-  height: 60px;
+  width: 20%;
+  height: 10%;
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-radius: 5px;
   border-radius: 3rem;
   font-family: "Chinese Rocks";
+  padding: 1% 0;
+}
+.joinNow:hover {
+  background-color: white;
+  color: teal;
+  border: 1px solid teal;
+}
+/************************************* TEAM PAGE *********************************/
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.4rem;
+  color: #b55e1c;
+  padding: 6% 0;
+}
+.topRow {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .topRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.middleRow {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .middleRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .bottomRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.last {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4%;
+}
+@media (max-width:950px) {
+  .last {
+    font-size: 2rem;
+  }
+}
+@media (max-width:500px) {
+  .last {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0%;
+  }
+}
+.first {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width:500px) {
+  .first {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2%;
+    border: 5px solid #b55e1c;
+  }
+}
+.first .picture {
+  padding: 15%;
+}
+@media (max-width:500px) {
+  .first .picture {
+    padding: 15% 15% 5% 15%;
+  }
+}
+.first .picture .profile {
+  border: 5px solid #008b91;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.first .nameJob {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .first .nameJob {
+    padding-top: 1%;
+  }
+}
+.first .nameJob h2 {
+  padding-top: 4%;
+  font-size: 3.6rem;
+}
+@media (max-width:950px) {
+  .first .nameJob h2 {
+    font-size: 3rem;
+  }
+}
+.first .nameJob h3 {
+  font-size: 2.8rem;
+  padding-bottom: 4%;
+}
+@media (max-width:950px) {
+  .first .nameJob h3 {
+    font-size: 2rem;
+  }
+}
+.first .socialLogos {
+  width: 100%;
+  display: flex;
+  padding: 1% 35%;
+}
+.first .socialLogos .github {
+  width: 50%;
+  padding-right: 15%;
+}
+.first .socialLogos .twitter {
+  width: 50%;
+  padding-left: 15%;
 }
