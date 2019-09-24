@@ -13,7 +13,7 @@
 }
 .join {
   width: 100%;
-  height: 50%;
+  // height: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -34,16 +34,16 @@
     //border: 1px solid black;
 
     color: @darkOrange;
-    font-size: 6rem;
+    //font-size: 6.6rem;
     padding-bottom: 4%;
     font-family: "Zrnic";
   }
 
   h3 {
     color: @lightOrange;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 2%;
-    font-family: "Chinese Rocks";
+    font-family: "VDS Thin";
 
     @media @tablet {
       display: none;
@@ -51,14 +51,13 @@
   }
 
   .joinNowIntro {
-    .buttonlayout(teal, 26%, 50%, white, 2rem);
+    .buttonlayout(teal, 12%, 50%, white, 2rem);
     border-radius: 3rem;
-    font-family: "Chinese Rocks";
 
     @media @tablet {
       .buttonlayout(teal, 30%, 30%, white, 1.8rem);
       border-radius: 3rem;
-      font-family: "Chinese Rocks";
+
       padding: 1% 0;
     }
   }
@@ -66,6 +65,8 @@
 
 .introWords {
   width: 40%;
+  display: flex;
+  justify-content: center;
 
   .tablet {
     display: none;
@@ -77,45 +78,17 @@
     flex-direction: column-reverse;
   }
 
-  .signIn {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
-    align-items: center;
-    padding-top: 15%;
-    padding-bottom: 8%;
+  h2 {
+    color: @darkOrange;
+    font-size: 8rem;
+    padding-bottom: 5%;
+
+    font-family: "Chinese Rocks";
 
     @media @tablet {
-      padding: 1% 0 3% 0;
-      height: 60%;
-    }
-
-    h2 {
-      color: @darkOrange;
-      font-size: 4rem;
-      padding-bottom: 5%;
-
-      font-family: "Chinese Rocks";
-
-      @media @tablet {
-        padding-bottom: 3%;
-        font-size: 3rem;
-        display: none;
-      }
-    }
-    .signInButton {
-      .buttonlayout(teal, 30%, 50%, white, 1.8rem);
-      border-radius: 3rem;
-      font-family: "Chinese Rocks";
-
-      @media @tablet {
-        .buttonlayout(teal, 30%, 30%, white, 1.8rem);
-        border-radius: 3rem;
-        font-family: "Chinese Rocks";
-        padding: 1% 0;
-      }
+      padding-bottom: 3%;
+      font-size: 3rem;
+      display: none;
     }
   }
 }
@@ -123,7 +96,6 @@
 .joinNow {
   .buttonlayout(teal, 70px, 350px, white, 2rem);
   border-radius: 3rem;
-  font-family: "Chinese Rocks";
 }
 
 .imageIntro {
@@ -268,7 +240,6 @@
 .joinNow {
   .buttonlayout(teal, 10%, 20%, white, 1.6rem);
   border-radius: 3rem;
-  font-family: "Chinese Rocks";
   padding: 1% 0;
 }
 
