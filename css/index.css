@@ -254,6 +254,7 @@ header nav {
 }
 header nav a {
   text-decoration: none;
+  font-family: "VDS Thin";
   font-size: 2.4rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   color: white;
@@ -381,12 +382,13 @@ header nav a {
   }
 }
 .footer .navLinksFooter nav a {
-  width: 25%;
+  width: 15%;
   font-size: 1.8rem;
   text-decoration: none;
   color: white;
   padding: 1% 2%;
   text-align: center;
+  font-family: "VDS Thin";
 }
 @media (max-width:767px) {
   .footer .navLinksFooter nav a {
@@ -434,15 +436,15 @@ header nav a {
   width: 100%;
   text-align: center;
   color: #b55e1c;
-  font-size: 5rem;
+  font-size: 6rem;
   padding-bottom: 4%;
   font-family: "Zrnic";
 }
 .join h3 {
   color: #db832d;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2%;
-  font-family: "VDS Thin";
+  font-family: "Chinese Rocks";
 }
 @media (max-width:767px) {
   .join h3 {
@@ -518,9 +520,9 @@ header nav a {
 }
 .introWords .signIn h2 {
   color: #b55e1c;
-  font-size: 2rem;
+  font-size: 4rem;
   padding-bottom: 5%;
-  font-family: "VDS Thin";
+  font-family: "Chinese Rocks";
 }
 @media (max-width:767px) {
   .introWords .signIn h2 {
@@ -627,6 +629,7 @@ header nav a {
   flex-direction: column;
   text-align: center;
   width: 50%;
+  font-family: "Zrnic";
 }
 @media (max-width:767px) {
   .wordsAbout {
@@ -663,6 +666,7 @@ header nav a {
 }
 .infoColumns .column {
   width: 18%;
+  font-family: "Chinese Rocks";
   text-align: center;
 }
 @media (max-width:767px) {
@@ -752,6 +756,7 @@ header nav a {
 .topRow {
   display: flex;
   justify-content: space-between;
+  border-top: 5px solid #b55e1c;
 }
 @media (max-width:500px) {
   .topRow {
@@ -762,6 +767,7 @@ header nav a {
 .middleRow {
   display: flex;
   justify-content: space-between;
+  border-top: 5px solid #b55e1c;
 }
 @media (max-width:500px) {
   .middleRow {
@@ -772,6 +778,7 @@ header nav a {
 .bottomRow {
   display: flex;
   justify-content: space-between;
+  border-top: 5px solid #b55e1c;
 }
 @media (max-width:500px) {
   .bottomRow {
@@ -783,6 +790,7 @@ header nav a {
   display: flex;
   justify-content: center;
   padding-bottom: 4%;
+  border-top: 5px solid #b55e1c;
 }
 @media (max-width:950px) {
   .last {
@@ -840,6 +848,7 @@ header nav a {
 .first .nameJob h2 {
   padding-top: 4%;
   font-size: 3.6rem;
+  font-family: "Chinese Rocks";
 }
 @media (max-width:950px) {
   .first .nameJob h2 {
@@ -849,6 +858,7 @@ header nav a {
 .first .nameJob h3 {
   font-size: 2.8rem;
   padding-bottom: 4%;
+  font-family: "Chinese Rocks";
 }
 @media (max-width:950px) {
   .first .nameJob h3 {
