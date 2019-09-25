@@ -116,3 +116,124 @@
     }
   }
 }
+
+/***********************Footer Team ************************/
+
+.footerTeam {
+  width: 100%;
+  background-color: @darkOrange;
+  padding: 2% 0;
+
+  display: flex;
+  justify-content: space-between;
+  // flex-direction: column;
+
+  .logoFooter {
+    height: 80%;
+    width: auto;
+    height: 5em;
+  }
+
+  .iconFooter {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    padding-left: 6%;
+    font-family: "Zrnic";
+
+    @media @mobile {
+      padding-left: 0%;
+    }
+
+    .footerLogoPhrase {
+      display: flex;
+      justify-content: flex-end;
+
+      @media @tablet {
+        width: 100%;
+        padding-left: 0%;
+      }
+
+      h2 {
+        width: 50%;
+        padding: 2% 2% 2% 6%;
+        .custom-layout(flex-start, center);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: @foodieFun;
+
+        @media @tablet {
+          font-size: 2rem;
+        }
+      }
+    }
+    .dreams {
+      width: 100%;
+
+      display: flex;
+      .custom-layout(flex-end, center);
+      padding-right: 20%;
+
+      @media @tablet {
+        dispaly: flex;
+        align-items: center;
+        padding-top: 1%;
+        padding-right: 3%;
+      }
+      h3 {
+        color: white;
+        font-size: 1.8rem;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+        @media @tablet {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  .navLinksFooter {
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+    @media @mobile {
+      width: 60%;
+    }
+
+    nav {
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+
+      // flex-wrap: wrap;
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      a {
+        //width: 15%;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: white;
+        padding: 1% 1%;
+        text-align: center;
+        font-family: "VDS Thin";
+
+        @media @tablet {
+          font-size: 1.4rem;
+        }
+        @media @mobile {
+          padding: 0% 3%;
+          margin: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
