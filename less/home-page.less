@@ -253,19 +253,24 @@
 
 /************************************* TEAM PAGE *********************************/
 
-.title {
+.meet {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4.4rem;
-  color: @darkOrange;
-  padding: 6% 0;
+
+  padding: 2% 0;
+  border-bottom: 5px solid @darkOrange;
+
+  h1 {
+    font-size: 4.4rem;
+    color: @darkOrange;
+  }
 }
 
 .topRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 5px solid @darkOrange;
 
   @media @mobile {
@@ -276,7 +281,7 @@
 
 .middleRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 5px solid @darkOrange;
 
   @media @mobile {
@@ -287,7 +292,7 @@
 
 .bottomRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 5px solid @darkOrange;
 
   @media @mobile {
@@ -300,6 +305,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 4%;
+
   border-top: 5px solid @darkOrange;
   @media @small {
     font-size: 2rem;
@@ -313,11 +319,9 @@
 }
 
 .first {
-  width: 33%;
+  width: 25%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-
   @media @mobile {
     display: flex;
     flex-direction: column;
@@ -326,7 +330,7 @@
     border: 5px solid @darkOrange;
   }
   .picture {
-    padding: 15%;
+    padding: 5% 25% 5% 25%;
 
     @media @mobile {
       padding: 15% 15% 5% 15%;
@@ -372,8 +376,12 @@
     display: flex;
     padding: 1% 35%;
 
+    a:hover {
+      cursor: pointer;
+    }
+
     .github {
-      width: 50%;
+      width: 100%;
       padding-right: 15%;
     }
     .twitter {

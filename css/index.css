@@ -814,18 +814,21 @@ header nav a {
   color: teal;
 }
 /************************************* TEAM PAGE *********************************/
-.title {
+.meet {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2% 0;
+  border-bottom: 5px solid #b55e1c;
+}
+.meet h1 {
   font-size: 4.4rem;
   color: #b55e1c;
-  padding: 6% 0;
 }
 .topRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 5px solid #b55e1c;
 }
 @media (max-width:500px) {
@@ -836,7 +839,7 @@ header nav a {
 }
 .middleRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 5px solid #b55e1c;
 }
 @media (max-width:500px) {
@@ -847,7 +850,7 @@ header nav a {
 }
 .bottomRow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 5px solid #b55e1c;
 }
 @media (max-width:500px) {
@@ -875,10 +878,9 @@ header nav a {
   }
 }
 .first {
-  width: 33%;
+  width: 25%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 @media (max-width:500px) {
   .first {
@@ -890,7 +892,7 @@ header nav a {
   }
 }
 .first .picture {
-  padding: 15%;
+  padding: 5% 25% 5% 25%;
 }
 @media (max-width:500px) {
   .first .picture {
@@ -940,8 +942,11 @@ header nav a {
   display: flex;
   padding: 1% 35%;
 }
+.first .socialLogos a:hover {
+  cursor: pointer;
+}
 .first .socialLogos .github {
-  width: 50%;
+  width: 100%;
   padding-right: 15%;
 }
 .first .socialLogos .twitter {
