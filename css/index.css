@@ -980,7 +980,7 @@ header nav a {
   border-radius: 20%;
   animation: drift 5000ms infinite linear;
 }
-@media (max-width:1570px) {
+@media (max-width:1375px) {
   .wave {
     display: none;
   }
